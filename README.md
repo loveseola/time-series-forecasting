@@ -1,7 +1,18 @@
 ﻿@[TOC](目录索引)
 # 项目说明
 本项目为时间序列预测项目，主要重点在于对预测项目整体流程的梳理总结，不同框架下如何进行简单数据处理和模型搭建。因此项目中搭建的主要为一些常用模型（后续会不断修改完善）。模型包含了prophet模型、keras库的bp神经网络和lstm网络模型、pytorch 框架下的lstm相关模型。由于prophet模型和keras库的bp神经网络和lstm网络模型的构建、训练、测试整体代码量较少，将直接各自在一个脚本中完成。而pytorch框架下的模型将对代码块进行拆解。
-# 项目代码树结构
+# 项目主要环境
+prophet模型环境：
+python=3.6
+安装fbprophet
+keras模型环境：
+tensorflow=2.9
+keras=2.0
+pytorch模型环境：
+python=3.8
+torch=1.9.1
+cuda=11.1
+cudnn=8.6
 
 
 # 项目模型介绍
