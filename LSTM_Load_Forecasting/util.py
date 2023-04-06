@@ -94,7 +94,7 @@ def train(args, Dtr, Val, path):
 
 def test_m(args, Dte, path,scaler,flag):
     '''
-
+    with torch.no_grad() 是创建了一张图，所以在这张图中，所有的计算都不会进入梯度计算；detach()将一个变量从图中剥离出来进而使得此变量的计算不会进入到梯度计算中
     :param args: 参数
     :param Dte: 测试集
     :param path: 加载模型
