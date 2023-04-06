@@ -112,8 +112,7 @@ method:方法，输入'yuce'表示预测方法，输入’es‘表示评估方�
 
 #### 补充说明
 1、先得到已转化成Dataloader格式的训练测试验证集数据，传入前的seq中train_seq的shape为（seq_len,input_size),train_label的shape为（output_size）
-2、在本项目中，由于默认了batch_fist=True,故传入lstm模型中的x的shape为（batch_size,seq_len,
-batch_size,seq_len,input_size）
+2、在本项目中，由于默认了batch_fist=True,故传入lstm模型中的x的shape为（batch_size,seq_len,input_size）
 #### 模型运行
 直接运行univariate_single_step.py脚本文件，输出结果根据预测方法可以输出预测结果和评估参数。如需修改参数在args.py里us_args_parser函数里修改。
 
